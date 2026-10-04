@@ -1,0 +1,12 @@
+[submodule "submodules/JeepBot-SetUp"]
+	path = submodules/JeepBot-SetUp
+	url = https://github.com/KennethKhant/JeepBot-SetUp.git
+[submodule "submodules/JeepBot-ELRS-Controller"]
+	path = submodules/JeepBot-ELRS-Controller
+	url = https://github.com/KennethKhant/JeepBot-ELRS-Controller.git
+[submodule "submodules/JeepBot-Docs"]
+	path = submodules/JeepBot-Docs
+	url = https://github.com/KennethKhant/JeepBot-Docs.git
+[submodule "submodules/148-jeepbot-team-01"]
+	path = submodules/148-jeepbot-team-01
+	url = https://github.com/Triton-AI/148-jeepbot-team-01.git
