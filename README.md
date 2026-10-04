@@ -42,16 +42,20 @@ UCSD_JEEPBOT/
 ├── .gitmodules
 ├── README.md
 ├── software/
+│   ├── README.md
 │   ├── JeepBot-SetUp/
 │   ├── JeepBot-ELRS-Controller/
 │   ├── ros2-docker/               # planned
 │   └── donkeycar-stack/           # planned
 └── hardware/
+    ├── README.md
     ├── JeepBot-Docs/
     └── 148-jeepbot-team-01/
 ```
 
 ## Submodules
+
+GitHub displays each committed submodule path as a folder-like link to the exact submodule commit. The folder indexes in [`software/`](./software) and [`hardware/`](./hardware) also provide direct links to each upstream repository.
 
 | Submodule | Purpose | Upstream |
 | --- | --- | --- |
