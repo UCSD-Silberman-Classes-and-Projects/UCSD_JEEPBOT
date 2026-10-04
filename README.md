@@ -41,9 +41,12 @@ The project is designed to be modular and reproducible. Each subsystem is mainta
 UCSD_JEEPBOT/
 ├── .gitmodules
 ├── README.md
-└── submodules/
-    ├── JeepBot-SetUp/
-    ├── JeepBot-ELRS-Controller/
+├── software/
+│   ├── JeepBot-SetUp/
+│   ├── JeepBot-ELRS-Controller/
+│   ├── ros2-docker/               # planned
+│   └── donkeycar-stack/           # planned
+└── hardware/
     ├── JeepBot-Docs/
     └── 148-jeepbot-team-01/
 ```
@@ -52,10 +55,17 @@ UCSD_JEEPBOT/
 
 | Submodule | Purpose | Upstream |
 | --- | --- | --- |
-| [`submodules/JeepBot-SetUp`](./submodules/JeepBot-SetUp) | Setup and control scripts for F710 / VESC steering and drive testing. | <https://github.com/KennethKhant/JeepBot-SetUp.git> |
-| [`submodules/JeepBot-ELRS-Controller`](./submodules/JeepBot-ELRS-Controller) | ExpressLRS-to-USB-HID controller firmware and DonkeyCar joystick integration. | <https://github.com/KennethKhant/JeepBot-ELRS-Controller.git> |
-| [`submodules/JeepBot-Docs`](./submodules/JeepBot-Docs) | Static setup guide for VESC, encoder, F710 controller, and Raspberry Pi workflows. | <https://github.com/KennethKhant/JeepBot-Docs.git> |
-| [`submodules/148-jeepbot-team-01`](./submodules/148-jeepbot-team-01) | Main team repository containing JeepBot hardware documentation, system architecture, CAD/docs/source organization, and project history. | <https://github.com/Triton-AI/148-jeepbot-team-01.git> |
+| [`software/JeepBot-SetUp`](./software/JeepBot-SetUp) | Setup and control scripts for F710 / VESC steering and drive testing. | <https://github.com/KennethKhant/JeepBot-SetUp.git> |
+| [`software/JeepBot-ELRS-Controller`](./software/JeepBot-ELRS-Controller) | ExpressLRS-to-USB-HID controller firmware and DonkeyCar joystick integration. | <https://github.com/KennethKhant/JeepBot-ELRS-Controller.git> |
+| [`hardware/JeepBot-Docs`](./hardware/JeepBot-Docs) | Static setup guide for VESC, encoder, F710 controller, and Raspberry Pi workflows. | <https://github.com/KennethKhant/JeepBot-Docs.git> |
+| [`hardware/148-jeepbot-team-01`](./hardware/148-jeepbot-team-01) | Main team repository containing JeepBot hardware documentation, system architecture, CAD/docs/source organization, and project history. | <https://github.com/Triton-AI/148-jeepbot-team-01.git> |
+
+## Planned Submodules
+
+| Path | Intended purpose | Status |
+| --- | --- | --- |
+| `software/ros2-docker/` | ROS 2 development container and runtime environment for autonomy work. | Planned |
+| `software/donkeycar-stack/` | DonkeyCar project workspace and vehicle configuration. | Planned |
 
 ## System Overview
 
@@ -115,10 +125,10 @@ git submodule update --remote --merge
 
 ## Recommended Reading Order
 
-1. Start with [`submodules/148-jeepbot-team-01/README.md`](./submodules/148-jeepbot-team-01/README.md) for the high-level project background, hardware revisions, and system architecture.
-2. Review [`submodules/JeepBot-Docs/index.html`](./submodules/JeepBot-Docs/index.html) for the setup guide covering VESC, encoder, controller, and Raspberry Pi steps.
-3. Use [`submodules/JeepBot-SetUp/README.md`](./submodules/JeepBot-SetUp/README.md) when running steering and drive scripts against the physical platform.
-4. Use [`submodules/JeepBot-ELRS-Controller/README.md`](./submodules/JeepBot-ELRS-Controller/README.md) when working on ExpressLRS controller firmware or joystick integration.
+1. Start with [`hardware/148-jeepbot-team-01/README.md`](./hardware/148-jeepbot-team-01/README.md) for the high-level project background, hardware revisions, and system architecture.
+2. Review [`hardware/JeepBot-Docs/index.html`](./hardware/JeepBot-Docs/index.html) for the setup guide covering VESC, encoder, controller, and Raspberry Pi steps.
+3. Use [`software/JeepBot-SetUp/README.md`](./software/JeepBot-SetUp/README.md) when running steering and drive scripts against the physical platform.
+4. Use [`software/JeepBot-ELRS-Controller/README.md`](./software/JeepBot-ELRS-Controller/README.md) when working on ExpressLRS controller firmware or joystick integration.
 
 ## Development Workflow
 
@@ -127,7 +137,9 @@ Because this is a submodule workspace, most code and documentation changes shoul
 Typical workflow:
 
 ```bash
-cd submodules/<component-repo>
+cd software/<component-repo>
+# or
+cd hardware/<component-repo>
 git checkout <branch-name>
 # make changes
 git add .
@@ -135,7 +147,9 @@ git commit -m "Describe component change"
 git push
 
 cd ../..
-git add submodules/<component-repo>
+git add software/<component-repo>
+# or
+git add hardware/<component-repo>
 git commit -m "Update <component-repo> submodule pointer"
 git push
 ```
