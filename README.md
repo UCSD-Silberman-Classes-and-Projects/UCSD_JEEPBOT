@@ -1,5 +1,5 @@
 # <div align="center">Jeep Bot</div>
-### <div align="center">Triton AI and Dr. Jack Silberman's Lab Group</div>
+### <div align="center">Dr. Jack Silberman's Lab Group</div>
 #### <div align="center">UC San Diego Jacobs School of Engineering and Halıcıoğlu Data Science Institute</div>
 
 <p align="center">
@@ -23,8 +23,7 @@ JeepBot is a full-scale robotics platform developed for experimentation in vehic
 
 The project is designed to be modular and reproducible. Each subsystem is maintained in a focused repository and brought together here as a master workspace so future contributors can understand the full system, update individual components, and reproduce the current JeepBot stack.
 
-- **Organization**: Triton AI
-- **Team Members**: Evan Chou, Erik, Sophia Davila, Helena, Kaung Khant, Chris Martin
+- **Team Members List**: [`Current + Alumni`](./CONTRIBUTERS.md)
 - **Faculty Sponsors**: Dr. Jack Silberman
 
 ## Project Goals
