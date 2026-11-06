@@ -6,7 +6,7 @@ Software-facing submodules for JeepBot control, firmware, autonomy, and runtime 
 | --- | --- | --- | --- |
 | JeepBot setup scripts | [`JeepBot-SetUp`](./JeepBot-SetUp) | <https://github.com/KennethKhant/JeepBot-SetUp> | Python setup and control scripts for Logitech F710, VESC steering, and drive testing. |
 | ELRS controller firmware | [`JeepBot-ELRS-Controller`](./JeepBot-ELRS-Controller) | <https://github.com/KennethKhant/JeepBot-ELRS-Controller> | ExpressLRS receiver to Arduino Leonardo USB-HID joystick firmware and DonkeyCar joystick integration. |
-| Current demo workspace | [`TritonAI_Jeepbot_Current_Directory`](./TritonAI_Jeepbot_Current_Directory) | <https://github.com/esha0281/TritonAI_Jeepbot_Current_Directory> | Proof-of-concept, DonkeyCar, and YOLO demo code. |
+| Current demo workspace | [`DonkeyJeepCar`](./DonkeyJeepCar) | <https://github.com/UCSD-Silberman-Classes-and-Projects/DonkeyJeepCar> | Proof-of-concept, DonkeyCar, and YOLO demo code. |
 | ROS 2 Docker stack | `ros2-docker/` | `[add repository link]` | Planned ROS 2 development container and autonomy runtime workspace. |
 | DonkeyCar stack | `donkeycar-stack/` | `[add repository link]` | Planned DonkeyCar project workspace and vehicle configuration. |
 

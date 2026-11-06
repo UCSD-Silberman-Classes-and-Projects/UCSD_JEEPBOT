@@ -20,6 +20,9 @@
 | Tanmayi Sattenapalli | Software Engineer | Camera Object Detection | ??? |
 | Mac Blair | Software Engineer | Object Avoidance | ??? |
 | Lucas Yeykelis | Software Engineer | Object Avoidance | ??? |
+| Aidan Lee | Electrical Engineer | ECE 191 | ???|
+| Junyang He | Electrical Engineer | ECE 191 | ??? |
+| Xuanyu Liu | Electrical Engineer | ECE 191 | ??? |
 | Ian Kao | Hardware Engineer | 360 Camera Integration | ??? |
 | Yian Zhuang | Embedded Systems Engineer | ROS2 Systems Integration | ??? |
 | Alex Wei | Embedded Systems Engineer | ROS2 Systems Integration | ??? |

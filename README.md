@@ -1,5 +1,5 @@
 # <div align="center">Jeep Bot</div>
-### <div align="center">Dr. Jack Silberman's Lab Group</div>
+### <div align="center">Physical AI Lab (Dr. Jack Silberman's Lab Group)</div>
 #### <div align="center">UC San Diego Jacobs School of Engineering and Halıcıoğlu Data Science Institute</div>
 
 <p align="center">
@@ -44,7 +44,7 @@ UCSD_JEEPBOT/
 │   ├── README.md
 │   ├── JeepBot-SetUp/
 │   ├── JeepBot-ELRS-Controller/
-│   ├── TritonAI_Jeepbot_Current_Directory/
+│   ├── DonkeyJeepCar/
 │   ├── ros2-docker/               # planned
 │   └── donkeycar-stack/           # planned
 └── hardware/
@@ -61,7 +61,7 @@ GitHub displays each committed submodule path as a folder-like link to the exact
 | --- | --- | --- |
 | [`software/JeepBot-SetUp`](./software/JeepBot-SetUp) | Setup and control scripts for F710 / VESC steering and drive testing. | <https://github.com/KennethKhant/JeepBot-SetUp.git> |
 | [`software/JeepBot-ELRS-Controller`](./software/JeepBot-ELRS-Controller) | ExpressLRS-to-USB-HID controller firmware and DonkeyCar joystick integration. | <https://github.com/KennethKhant/JeepBot-ELRS-Controller.git> |
-| [`software/TritonAI_Jeepbot_Current_Directory`](./software/TritonAI_Jeepbot_Current_Directory) | Current proof-of-concept, DonkeyCar, and YOLO demo workspace. | <https://github.com/esha0281/TritonAI_Jeepbot_Current_Directory.git> |
+| [`software/DonkeyJeepCar`](./software/DonkeyJeepCar) | Current proof-of-concept, DonkeyCar, and YOLO demo workspace. | <https://github.com/UCSD-Silberman-Classes-and-Projects/DonkeyJeepCar.git> |
 | [`hardware/JeepBot-Docs`](./hardware/JeepBot-Docs) | Static setup guide for VESC, encoder, F710 controller, and Raspberry Pi workflows. | <https://github.com/KennethKhant/JeepBot-Docs.git> |
 | [`hardware/148-jeepbot-team-01`](./hardware/148-jeepbot-team-01) | Main team repository containing JeepBot hardware documentation, system architecture, CAD/docs/source organization, and project history. | <https://github.com/Triton-AI/148-jeepbot-team-01.git> |
 
@@ -70,7 +70,6 @@ GitHub displays each committed submodule path as a folder-like link to the exact
 | Path | Intended purpose | Status |
 | --- | --- | --- |
 | `software/ros2-docker/` | ROS 2 development container and runtime environment for autonomy work. | Planned |
-| `software/donkeycar-stack/` | DonkeyCar project workspace and vehicle configuration. | Planned |
 
 ## System Overview
 
